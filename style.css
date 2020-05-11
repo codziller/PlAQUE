@@ -17,22 +17,36 @@ src: url(fonts/montserrat/Montserrat-Regular.otf);
 @font-face {font-family: "AlbiaNovaW01-Regular"; src: url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.eot"); src: url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.woff") format("woff"), url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/00e858ac96dc30cab8eea51540726417.svg#AlbiaNovaW01-Regular") format("svg"); }
 
 @import url(//db.onlinewebfonts.com/c/00e858ac96dc30cab8eea51540726417?family=AlbiaNovaW01-Regular);
+
+@media screen and (min-width:1000px) {
+    html {}
+}
+html{
+font-size: 62.5%;
+width: 100%;
+max-width: 1680px;
+overflow-x: hidden;
+}
 body{
 
 padding: 0;
 margin: 0;
 overflow-x: hidden;
 background: #FFFEF2;
-width: 100%;
+max-width: 100%;
 left: 0;
+max-width: 1680px;
 }
+/*******
 .overall{
     margin-top: 0.2px;
+    width: 100%;
+    
 }
 #main-header{
     background-image: url(images/holdingHands.png);
     background-repeat: no-repeat;
-    background-size: 100% 570.3px;
+    background-size: 100% 80%;
     padding: 0;
     margin: 0;
     border: 0;
@@ -55,9 +69,9 @@ left: 0;
     font-family: AlbiaNovaW01-Regular;
     font-style: normal;
     font-weight: normal;
-    font-size: 19.7935px;
-    line-height: 31px;
-    /* identical to box height, or 154% */
+    font-size: 1.97935rem;
+    line-height: 3.1rem;
+    /* identical to box height, or 154% 
     
     
     color: #FFFFFF;
@@ -90,8 +104,8 @@ ul{
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: 500;
-font-size: 17px;
-line-height: 20px;
+font-size: 1.7rem;
+line-height: 2.0rem;
 
 }
 .navbar ul li a:hover, .navbar ul li a:active, .navbar ul li a:focus {
@@ -123,8 +137,8 @@ background: -webkit-linear-gradient(none);
     font-family: Afterglow;
     font-style: normal;
     font-weight: normal;
-    font-size: 36.611px;
-    line-height: 44px;
+    font-size: 3.6611rem;
+    line-height: 4.4rem;
     
     color: #EED4AB;
 }
@@ -132,9 +146,9 @@ background: -webkit-linear-gradient(none);
     font-family: Afterglow;
 font-style: normal;
 font-weight: normal;
-font-size: 68.6456px;
-line-height: 69px;
-/* or 100% */
+font-size: 6.86456rem;
+line-height: 6.9rem;
+/* or 100% 
 
 
 color: #EED4AB;
@@ -152,7 +166,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 28px;
-/* or 140% */
+/* or 140% 
 
 
 color: #FFFFFF;
@@ -178,7 +192,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 
-/* identical to box height */
+/* identical to box height 
 padding-top: 8px;
 
 color: #FFFFFF;
@@ -194,19 +208,19 @@ color: #FFFFFF;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  transition: all 0.1s ease-in;
   
 }
 
 #ringImg{
-    width: 498.73px;
-    height:376.82px ;
+    width: 100%;
+    height:96% ;
     position: relative;
     
 }
 #goldLine{
     width: 100%;
-    height: 200px;
+    height: 70%;
     transform: rotate(359deg);
 
 }
@@ -216,10 +230,171 @@ color: #FFFFFF;
     padding-right: 0;
     width: 103%;
 }
+**/
 
-/*Body styles*/
+
+
+
+.navbar-brand {
+  padding-top: 10vmin;
+  padding-left: 30px;
+  font-family: AlbiaNovaW01-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.97935rem;
+  line-height: 3.1rem;
+  /* identical to box height, or 154% */
+  
+  
+  color: #FFFFFF;
+}
+
+#navbarNav > ul > li > a{
+  background: -webkit-linear-gradient(96.19deg, #BFA67E 3.29%, #BDA47D 17.94%, #B69E78 23.21%, #AB9470 26.97%, #9A8565 29.99%, #8C795C 31.74%, #8C795C 34.69%, #8C795C 37.75%, #9A8565 40.21%, #AB9470 44.48%, #B69E78 49.79%, #BDA47D 57.25%, #BFA67E 77.95%, #BDA47D 86.7%, #B69E78 89.85%, #AB9470 92.1%, #9A8565 93.9%, #8C795C 94.95% );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  font-family: SF Pro Display;
+font-style: normal;
+font-weight: 500;
+font-size: 1.7rem;
+line-height: 2.0rem;
+
+}
+#navbarNav > ul > li > a:hover{
+  color: white;
+    background: linear-gradient(98.06deg, #BFA67E 3.29%, #BDA47D 17.94%, #B69E78 23.21%, #AB9470 26.97%, #9A8565 29.99%, #8C795C 31.74%, #8C795C 34.69%, #8C795C 37.75%, #9A8565 40.21%, #AB9470 44.48%, #B69E78 49.79%, #BDA47D 57.25%, #BFA67E 77.95%, #BDA47D 86.7%, #B69E78 89.85%, #AB9470 92.1%, #9A8565 93.9%, #8C795C 94.95%);
+border-radius: 4.59574px;
+
+
+padding: 3px 10px;
+text-decoration: none;
+-webkit-background-clip: none;
+-webkit-text-fill-color: white;
+background: -webkit-linear-gradient(none);
+transition: all 0.2s ease-in;
+}
+.navbar-brand>img{
+width: 22%;
+height: 46%;
+}
+ul{
+    list-style-type: none;
+    display: inline;}
+.nav-item {
+  padding: 0em 1.3em;
+}
+.nav-link {
+  
+  font-size: 1.1em;
+}
+
+.heading .h1 {
+  font-family: Afterglow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.6611rem;
+    line-height: 4.4rem;
+    
+    color: #EED4AB;
+  padding-top: 10vmin;
+  
+}
+#dreamWed{
+  font-family: Afterglow;
+font-style: normal;
+font-weight: normal;
+font-size: 6.86456rem;
+line-height: 6.9rem;
+/* or 100% */
+
+
+color: #EED4AB;
+}
+#headerText{
+  padding-top: 6vmin;
+  font-family: SF Pro Display;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+line-height: 28px;
+/* or 140% */
+
+
+color: #FFFFFF;
+
+}
+.headtexts{
+  white-space: nowrap;
+}
+
+#ringImg{
+  width: 90%;
+  height:100% ;
+  
+}
+
+.heading .h1 + span {
+  color: var(--yellow-color);
+}
+
+.heading .p {
+  padding: 0em 13vmin;
+  color: rgb(70, 65, 65);
+  font-size: 3.5vmin;
+  font-family: var(--pacifico);
+}
+
+.heading > .btn1,
+.btn2 {
+  background: #BDA47D;
+    border-radius: 3.63514px;
+  margin: 2vmin 2.5vmin;
+  font-family: SF Pro Display;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+  color: white;
+  border: none;
+    
+}
+
+.heading > .btn2 {
+    border: none;
+    background: transparent;
+  
+  color: white;
+}
+.heading > .btn1:hover,
+.btn2:hover {
+  border: 1px solid yellow;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+
+.heading {
+  margin-bottom: 35vmin;
+}
+
+#myVideo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -999;
+}
+
+
+  
+  
+
+
+
+/************************Body styles***************************/
 .body{
     padding: 0;
+   
 }
 
 .first-body{
@@ -234,8 +409,8 @@ color: #FFFFFF;
 font-family: SF Pro Display;
 font-style: normal;
 font-weight: 600;
-font-size: 41.0647px;
-line-height: 53px;
+font-size: 4.10647rem;
+line-height: 5.3rem;
 
 color: #B69E78;
 
@@ -244,8 +419,8 @@ color: #B69E78;
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: normal;
-font-size: 22px;
-line-height: 37px;
+font-size: 2.2rem;
+line-height: 3.7rem;
 /* or 154% */
 
 
@@ -256,8 +431,8 @@ color: #918A8A;
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: 600;
-font-size: 41.0647px;
-line-height: 53px;
+font-size: 4.10647rem;
+line-height: 5.3rem;
 text-align: right;
 
 color: #B69E78;
@@ -266,8 +441,8 @@ color: #B69E78;
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: normal;
-font-size: 22px;
-line-height: 37px;
+font-size: 2.2rem;
+line-height: 3.7rem;
 /* or 154% */
 
 text-align: right;
@@ -279,8 +454,8 @@ color: #918A8A;
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: 600;
-font-size: 44.0647px;
-line-height: 53px;
+font-size: 4.40647rem;
+line-height: 5.3rem;
 
 color: #B69E78;
 
@@ -289,8 +464,8 @@ color: #B69E78;
     font-family: SF Pro Display;
 font-style: normal;
 font-weight: normal;
-font-size: 24px;
-line-height: 37px;
+font-size: 2.4rem;
+line-height: 3.7rem;
 /* or 154% */
 
 
@@ -304,15 +479,12 @@ padding-right: 20px;
 
 
 .muffins{
-    background-image: url(images/muffin-back.png);
-    background-repeat: no-repeat;
-    background-size: 330.24px 215.29px;
-    background-position: 80px 40px;
+   
     padding-right: 25px;
 }
 .muffins > img{
-    max-width: 390.95px;
-max-height: 300px;
+    max-width: 90.5%;
+max-height: 84.6%;
 
 }
 
@@ -332,29 +504,22 @@ max-height: 403.88px;
 height: 363.88px;
 }
 .dining > img{
-    max-width: 390.95px;
-max-height: 300px;
-
+    max-width: 90.5%;
+max-height: 84.6%;
 }
 
 .dining{
-    background-image: url(images/diningback.png);
-    background-repeat: no-repeat;
-    background-size: 330.24px 215.29px;
-    background-position: 10px 25px;
+    
 
     padding-right: 0;
 }
 .deejay > img{
-    max-width: 390.95px;
-max-height: 300px;
+    max-width: 90%;
+max-height: 84.6%;
 }
 .deejay{
    
-    background-image: url(images/dj-back.png);
-    background-repeat: no-repeat;
-    background-size: 330.24px 215.29px;
-    background-position: 80px 38px;
+   
 }
 .thirdFlower > img{
     max-width: 100%;
@@ -377,7 +542,7 @@ margin-bottom: 64px;
 
 }
 .dashed-lines{
-    width: 507px;
+    width: 50%;
 height: 2px;
 
 
@@ -407,8 +572,8 @@ text-align: center;
 }
 
 #johncap , #johnhair{
-    width: 162.33px;
-height: 145.96px;
+    width: 35%;
+
 }
 
 #johnhair{
@@ -453,8 +618,8 @@ padding-left: 60px;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 43px;
+    font-size: 2.2rem;
+    line-height: 4.3rem;
     /* or 197% */
     
     
@@ -465,8 +630,8 @@ padding-left: 60px;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
-    line-height: 43px;
+    font-size: 2.2rem;
+    line-height: 4.3rem;
     /* or 197% */
     
     
@@ -477,8 +642,8 @@ padding-left: 60px;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 14.9639px;
-    line-height: 28px;
+    font-size: 1.49639rem;
+    line-height: 2.8rem;
     /* or 154% */
     
     
@@ -489,8 +654,8 @@ padding-left: 60px;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 14.9639px;
-    line-height: 28px;
+    font-size: 1.49639rem;
+    line-height: 2.8rem;
     /* or 154% */
     
     
@@ -503,10 +668,7 @@ padding-left: 60px;
     width:100% ;
     
     
-    background-image: url(images/johnback.png);
-    background-repeat: no-repeat;
-    background-size: 145.33px 130.96px;
-    background-position: 70px 0px;
+    
 }
 
 
@@ -515,10 +677,7 @@ padding-left: 60px;
     width:100% ;
     
     
-    background-image: url(images/johnback.png);
-    background-repeat: no-repeat;
-    background-size: 145.33px 130.96px;
-    background-position: 70px 0px;
+   
 }
 
 #slideimg{
@@ -539,16 +698,21 @@ margin: auto;
 
 */
 .plan-wed{
-   text-align: center;     
+   text-align: center;   
+   padding: 0;  
+   width: auto;
+   margin-left: 85px;
+   margin-right: 70px;
+   
 }
 
 .wed-plan{
-    background: #BDA47D;
+    
 box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
 border-radius: 4.89184px;
-width: 995px;
-height: 233.83px;
-margin-left: 28.35px;
+width: 100%;
+height: 100%;
+background: #BDA47D;
 
 
 
@@ -564,8 +728,8 @@ margin-left: 28.35px;
 font-family: SF Pro Display;
 font-style: normal;
 font-weight: 600;
-font-size: 40px;
-line-height: 48px;
+font-size: 4.0rem;
+line-height: 4.8rem;
 
 color: #FFFDD0;
 padding-top: 30px;
@@ -587,8 +751,8 @@ text-align: center;
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 600;
-    font-size: 25.4655px;
-    line-height: 30px;
+    font-size: 2.54655rem;
+    line-height: 3.0rem;
     
     color: #8C795C;
     padding-top: 12px;
@@ -608,7 +772,14 @@ text-align: center;
   
 }
 .getbox{
-    padding: 78.2px 0px 94.7px 170px;
+    width: 229px;
+height: 60px;
+background: #FFFFFF;
+border-radius: 4.77477px;
+
+}
+.getdiv{
+    vertical-align: middle;
 }
 
 /*Footer*/
@@ -633,9 +804,9 @@ color: #000000;
     background: rgba(242, 212, 157, 0.05);
 border: 0.795796px solid #8C795C;
 box-sizing: border-box;
-height: 250.26px;
+height:auto;
 
-margin: 65.15px 0px 3px 10px;
+margin: 65.15px 3px 3px 3px;
 
 
 }
@@ -768,3 +939,71 @@ border-radius: 4.77477px;
 .sub-list{
     padding-left: 20px;
 }
+/**Email send**/
+.subscribe form{
+    padding: 5px;
+    background: #FFFFFF;
+    border: 0.795796px solid #8C795C;
+    box-sizing: border-box;
+    border-radius: 4.77477px;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.subscribe table{
+    width: 100%;
+}
+
+.subscribe button{
+    border: none;
+    background: transparent;
+}
+
+.subscribe input{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+/**** Media query*****/
+@media only screen and (max-width: 768px) {
+    #myVideo {
+      display: none;
+    }
+    .section_1 {
+      background: url("images/holdingHandss.png");
+      background-size: cover;
+    }
+    .section_1 .p {
+      color: #e5e5e5;
+    }
+    .section_2 {
+      margin-top: 5vmin;
+    }
+  
+    .headtexts{
+    white-space: unset;
+    }
+    .navbar-toggler{
+        margin-top: 50px;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .services {
+      margin-top: 250vmin;
+    }
+    .section_5 .Team .member:nth-child(3) {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .section_4 .services {
+      margin-top: 330vmin;
+    }
+  }
+  
