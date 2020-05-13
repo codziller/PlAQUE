@@ -33,9 +33,15 @@ padding: 0;
 margin: 0;
 overflow-x: hidden;
 background: #FFFEF2;
-max-width: 100%;
-left: 0;
-max-width: 1680px;
+
+
+
+}
+main{
+    max-width: 1680px;
+    margin-left: auto;
+    margin-right: auto;
+   
 }
 /*******
 .overall{
@@ -273,11 +279,15 @@ text-decoration: none;
 -webkit-background-clip: none;
 -webkit-text-fill-color: white;
 background: -webkit-linear-gradient(none);
-transition: all 0.2s ease-in;
+
 }
 .navbar-brand>img{
 width: 22%;
 height: 46%;
+}
+
+.navbar-brand{
+    height: auto;
 }
 ul{
     list-style-type: none;
@@ -298,7 +308,7 @@ ul{
     line-height: 4.4rem;
     
     color: #EED4AB;
-  padding-top: 10vmin;
+  
   
 }
 #dreamWed{
@@ -313,7 +323,7 @@ line-height: 6.9rem;
 color: #EED4AB;
 }
 #headerText{
-  padding-top: 6vmin;
+  padding-top: 2vmin;
   font-family: SF Pro Display;
 font-style: normal;
 font-weight: normal;
@@ -331,30 +341,28 @@ color: #FFFFFF;
 
 #ringImg{
   width: 90%;
-  height:100% ;
+  height:95% ;
   
 }
 
-.heading .h1 + span {
-  color: var(--yellow-color);
-}
+
 
 .heading .p {
   padding: 0em 13vmin;
   color: rgb(70, 65, 65);
   font-size: 3.5vmin;
-  font-family: var(--pacifico);
 }
+  
 
-.heading > .btn1,
 .btn2 {
+    padding: 5px 30px 5px 30px;
   background: #BDA47D;
     border-radius: 3.63514px;
   margin: 2vmin 2.5vmin;
   font-family: SF Pro Display;
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 2rem;
   color: white;
   border: none;
     
@@ -374,7 +382,7 @@ font-size: 18px;
 }
 
 .heading {
-  margin-bottom: 35vmin;
+  margin-bottom: 15vmin;
 }
 
 #myVideo {
@@ -383,6 +391,7 @@ font-size: 18px;
   left: 0%;
   width: 100%;
   z-index: -999;
+  
 }
 
 
@@ -536,7 +545,7 @@ max-height: 363.88px;
 .cust-review{
    
     max-width: 100%;
-height: 396px;
+height: 100%;
 background: #BDA47D;
 margin-bottom: 64px;
 
@@ -572,7 +581,7 @@ text-align: center;
 }
 
 #johncap , #johnhair{
-    width: 35%;
+    width: 45%;
 
 }
 
@@ -691,6 +700,58 @@ margin: auto;
 }
 
 
+/********************Carousel style************************/
+.carousel {
+	
+	padding: 0 5px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .carousel-control {
+	width: 30px;
+    height: 30px;
+    
+    
+	background: none;
+}
+.carousel-control i {
+    font-size: 58px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: #FFFDD0;
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 rgb(226, 225, 225);
+}
+.carousel .carousel-indicators {
+    margin-top: 100px;
+	
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 17px;
+	height: 17px;
+	margin: 1px 3px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.carousel-indicators li {	
+	border: 1px solid #FFFDD0;
+box-sizing: border-box;
+margin-top: 100px;
+
+	
+}
+.carousel-indicators li.active {	
+	background: #FFFDD0;		
+	
+}
+
+/********************\Carousel style************************/
+
 /*Wedding plan
 
 
@@ -701,8 +762,8 @@ margin: auto;
    text-align: center;   
    padding: 0;  
    width: auto;
-   margin-left: 85px;
-   margin-right: 70px;
+   margin-left: 75px;
+   margin-right: 75px;
    
 }
 
@@ -710,9 +771,10 @@ margin: auto;
     
 box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
 border-radius: 4.89184px;
-width: 100%;
+width: auto;
 height: 100%;
 background: #BDA47D;
+padding-bottom: 20px;
 
 
 
@@ -745,17 +807,21 @@ height: 60px;
 text-align: center;
 
 }
+.wed-plan a{
+    text-decoration: none;
+}
 
-.wed-plan>div>div>h6{
+.wed-plan>div>div>a>h6{
 
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: 600;
     font-size: 2.54655rem;
     line-height: 3.0rem;
+    padding-top: 5px;
     
     color: #8C795C;
-    padding-top: 12px;
+   
     
 
 }
@@ -809,9 +875,6 @@ height:auto;
 margin: 65.15px 3px 3px 3px;
 
 
-}
-.main-footer{
-    margin-left: 12px;
 }
 
 .soch ul{
@@ -962,13 +1025,14 @@ border-radius: 4.77477px;
 .subscribe input{
     background: transparent;
     border: none;
+
     font-size: 16px;
 }
 
 
 
 /**** Media query*****/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     #myVideo {
       display: none;
     }
@@ -989,6 +1053,24 @@ border-radius: 4.77477px;
     .navbar-toggler{
         margin-top: 50px;
     }
+    #johncap , #johnhair{
+        width: 60%;
+    
+    }
+    .details{
+        padding-top: 0;
+    }
+    .carousel-indicators{
+        bottom: 0%;
+    }
+    .carousel .item {
+        text-align: left;}
+    
+        .carousel-control i {
+            font-size: 45px;
+            line-height: 32px;
+
+    
     
   }
   
@@ -1000,10 +1082,13 @@ border-radius: 4.77477px;
       width: 50%;
     }
   }
+
   
-  @media only screen and (max-width: 320px) {
-    .section_4 .services {
-      margin-top: 330vmin;
+  @media only screen and (max-width: 370px) {
+    .navbar-dark .navbar-brand {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 0;
     }
   }
   

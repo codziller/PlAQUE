@@ -8,16 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <!--Main Tag-->
+  
     
     <section class="section_1 container-fluid p-0">
         <div class="d-flex flex-column">
           <div>
             <header>
               <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""> PLAQUE </a>
+                <a class="navbar-brand d-flex flex-row" href="#"><img src="images/logo.png" class="vertical-align-start"><span class="pt-5 pl-2"> PLAQUE </span></a>
                 <button
                   class="navbar-toggler"
                   type="button"
@@ -31,7 +40,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <div class="navbar-nav mr-auto"></div>
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav float-md-right">
                     <li class="nav-item active">
                       <a class="nav-link" href="#"
                         >Home <span class="sr-only">(current)</span></a
@@ -60,7 +69,7 @@
               <img src="images/holdingHandss.png" id="myVideo">
               <div class="headtexts ">
             <h1 class="h1">Let's Plan Your</h1>
-            <h1><strong id="dreamWed">Dream Wedding</strong></h1>
+            <h1 class="mt-0"><strong id="dreamWed">Dream Wedding</strong></h1>
             <p id="headerText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac ut nulla <br>
               commodo orci, venenatis faucibus in condimentum.</p>
            <a href="#body-text-one"> <button type="button" class="btn btn2">Get Started</button> </a>
@@ -124,11 +133,26 @@ pulvinar condimentum egestas.
    
 <div class="cutlines" > <img src="images/dashedlines.png" alt="" class="dashed-lines"> </div>
 <div class="whatsay"> What People are Saying </div>
+
+<!--Carousel Init-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Carousel indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol> 
+
+
+<div class="carousel-inner">
+  <!--First Item-->
+  <div class="item carousel-item active">
+
 <!--      Users Pics       -->
 <div class="d-flex flex-row">
     <div class="member d-flex flex-column flex-md-row flex-nowrap">
         <img src="images/johnhair.png" id="johnhair" class="pr-5">
-        <div class="details pt-5">
+        <div class="details pt-2">
             <h4 id="Jd1">John Doe</h4>
             <p id="Jdtext">Lorem ipsum dolor sit amet, 
                 r adipiscing elit. At et enim eget 
@@ -137,7 +161,7 @@ pulvinar condimentum egestas.
     </div>
     <div class="member d-flex flex-column flex-md-row flex-nowrap">
             <img src="images/johncap.png" id="johncap" class="pr-5">
-            <div class="details pt-5">
+            <div class="details pt-2">
                 <h4 id="Jd2">Bonnie Riley</h4>
                 <p id="Jdtext2">Lorem ipsum dolor sit amet, 
                     r adipiscing elit. At et enim eget 
@@ -146,8 +170,77 @@ pulvinar condimentum egestas.
         </div>
     </div>
 
-<!--Slide circle-->
-<div class="slideicn"> <img src="images/slideicn.png" alt="" id="slideimg"></div>
+    <!--Image end-->
+    </div>
+
+    <!--Second Item-->
+
+    <div class="item carousel-item">
+
+      <!--      Users Pics       -->
+      <div class="d-flex flex-row">
+          <div class="member d-flex flex-column flex-md-row flex-nowrap">
+              <img src="images/johnhair.png" id="johnhair" class="pr-5">
+              <div class="details pt-2">
+                  <h4 id="Jd1">John Doe</h4>
+                  <p id="Jdtext">Lorem ipsum dolor sit amet, 
+                      r adipiscing elit. At et enim eget 
+                      pulvinar.</p>
+              </div>
+          </div>
+          <div class="member d-flex flex-column flex-md-row flex-nowrap">
+                  <img src="images/johncap.png" id="johncap" class="pr-5">
+                  <div class="details pt-2">
+                      <h4 id="Jd2">Bonnie Riley</h4>
+                      <p id="Jdtext2">Lorem ipsum dolor sit amet, 
+                          r adipiscing elit. At et enim eget 
+                          pulvinar.</p>
+                  </div>
+              </div>
+          </div>
+      
+          <!--Image end-->
+          </div>
+
+
+
+    <!--Third Item-->
+    <div class="item carousel-item">
+
+      <!--      Users Pics       -->
+      <div class="d-flex flex-row">
+          <div class="member d-flex flex-column flex-md-row flex-nowrap">
+              <img src="images/johnhair.png" id="johnhair" class="pr-5">
+              <div class="details pt-2 text-left">
+                  <h4 id="Jd1">John Doe</h4>
+                  <p id="Jdtext">Lorem ipsum dolor sit amet, 
+                      r adipiscing elit. At et enim eget 
+                      pulvinar.</p>
+              </div>
+          </div>
+          <div class="member d-flex flex-column flex-md-row flex-nowrap">
+                  <img src="images/johncap.png" id="johncap" class="pr-5">
+                  <div class="details pt-2 text-left">
+                      <h4 id="Jd2">Bonnie Riley</h4>
+                      <p id="Jdtext2">Lorem ipsum dolor sit amet, 
+                          r adipiscing elit. At et enim eget 
+                          pulvinar.</p>
+                  </div>
+              </div>
+          </div>
+      
+          <!--Image end-->
+          </div>
+
+    <!-- Carousel controls -->
+    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <i class="fa fa-angle-left"></i>
+  </a>
+  <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+      <i class="fa fa-angle-right"></i>
+  </a>
+  </div>
+</div>
     </div>
 
 
@@ -158,10 +251,10 @@ pulvinar condimentum egestas.
 
 <div class="row wed-plan">
     
-<div class="col-12 col-md-6"><h3>Lets plan your wedding</h3>
-<p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. At et enim eget pulvinar <br>
+<div class="col-12 col-md-6 text-md-left"><h3>Lets plan your wedding</h3>
+<p class="text-md-left">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. At et enim eget pulvinar <br>
     pulvinar condimentum egestas.</p></div>
-<div class="col-12 col-md-6 getdiv d-flex justify-content-center my-auto"> <div class="getbox"><h6> Get started </h6></div></div>
+<div class="col-12 col-md-6 getdiv d-flex justify-content-center my-auto">  <div class="getbox"><a href="#body-text-one"><h6> Get started </h6></a></div></div>
 </div>
 
 </div>
@@ -169,7 +262,7 @@ pulvinar condimentum egestas.
 <div class="container-fluid main-footer p-0 ">
 
 <div class="row all-footer pl-5">
-    <div class="col-12 col-md-6 col-lg-3 sosh-foot"><div class="row"> <div class="col-12 foot-logo"> 
+    <div class="col-12 col-md-6 col-lg-3 sosh-foot pb-md-5 pt-5 pt-md-0"><div class="row"> <div class="col-12 foot-logo"> 
         <img src="images/logo.png " id="footerlogo" alt=""> PLAQUE</div> 
     <div class="col-12 soch">
         <h6>
@@ -183,11 +276,11 @@ pulvinar condimentum egestas.
     </div>
     </div>
 </div>
-    <div class=" col-12 col-md-6 col-lg-2"> <ul class="help-info"><li id="help-head">Help & Information</li>
+    <div class=" col-12 col-md-6 col-lg-2 pt-md-5 pb-md-5"> <ul class="help-info"><li id="help-head">Help & Information</li>
     <li><a href="#">Help</a></li>
     <li><a href="#">Lorem Ipsum</a></li>
     <li><a href="#">Blog</a></li></ul></div>
-    <div class="col-12 col-md-6 col-lg-2"> <ul class="about">
+    <div class="col-12 col-md-6 col-lg-2 pt-md-5 pb-md-5"> <ul class="about">
         <li id="about-head">About</li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Careers at Plaque</a></li>
@@ -195,7 +288,7 @@ pulvinar condimentum egestas.
         <li><a href="#">Private Policy</a></li>
     </ul>
     </div>
-    <div class="col-12 col-md-6 col-lg-5 sub-list"> <ul class="subscribe">
+    <div class="col-12 col-md-6 col-lg-5 sub-list pt-md-5 pb-5"> <ul class="subscribe">
         <li id="sub-head">Subscribe to our newsletter</li>
         <li>No spam, We Promise!!</li>
         <li>Recieve weekly news on our new</li>
@@ -215,7 +308,7 @@ pulvinar condimentum egestas.
 
 </div>
 
-
+</main>
 
 
 
